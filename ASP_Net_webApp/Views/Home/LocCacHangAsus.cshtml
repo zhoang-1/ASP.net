@@ -1,0 +1,42 @@
+﻿@model List<ASP_Net_webApp.Models.MayTinh>
+@{
+    Layout = "~/Views/Shared/LayoutUser.cshtml";
+    ViewBag.title = "Trang Chủ";
+    ViewBag.DanhSachTest = new List<string> { "Hoang", "huy hoang" };
+    ViewBag.active = 1;
+}
+
+<div class="container">
+    <h4> Danh Sach Hãng Sản Xuất Theo Asus</h4>
+    <p>
+        <a href="~/Home">
+            Home
+        </a>
+    </p>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Mã Máy</th>
+                <th>Dòng Máy</th>
+                <th>Giá Bán</th>
+                <th>Ngày Sản Xuất</th>
+                <th>Hãng Sản Xuất</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.MaMay</td>
+                    <td>@item.DongMay</td>
+                    <td>@string.Format("{0:#,0}", item.GiaBan)</td>
+                    <td>@string.Format("{0:dd/MM/yyyy}", item.NgaySanXuat)</td>
+                    <td>@item.HangSanXuat</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+
