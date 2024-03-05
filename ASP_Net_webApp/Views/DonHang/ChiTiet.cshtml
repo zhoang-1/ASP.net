@@ -1,0 +1,80 @@
+﻿@model ASP_Net_webApp.Models.DonHang
+
+@{
+    ViewBag.Title = "Chi Tiết đơn Hàng";
+    Layout = "~/Views/Shared/LayoutUser.cshtml";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h5>Chi Tiết Đơn Hàng</h5>
+            </hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.TenKhachHang)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.TenKhachHang)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.SoDienThoai)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.SoDienThoai)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.DiaChiGiaoHang)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.DiaChiGiaoHang)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.NgayDatHang)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.NgayDatHang)
+                </dd>
+
+            </dl>
+        </div>
+        <div class="col-md-8">
+            <h6>Chi Tiết đơn Hàng
+                <a href="~/DonHang/ThemChiTiet?idDonHang=@Model.ID" style="float:right;">Thêm</a>
+            </h6>
+            <table class="table table-bordered">
+                <tr>
+                    <th>Mã Máy</th>
+                    <th>Dòng Náy</th>
+                    <th>Giá Bán</th>
+                    <th>Ngày Sản Xuất</th>
+                    <th>Hãng Sản Xuất</th>
+                    <th>#</th>
+                </tr>
+                @foreach (var item in Model.MayTinhDatMua)
+                {
+                    <td>@item.MaMay</td>
+                    <td>@item.DongMay</td>
+                    <td>@item.GiaBan</td>
+                    <td>@item.NgaySanXuat</td>
+                    <td>@item.HangSanXuat</td>
+                   <td>
+                       <a href="~/DonHang/CapNhatChiTiet?idDonHang=@Model.ID&maMay=@item.MaMay">Edit</a>
+                       <a href="~/DonHang/XoaChiTiet?idDonHang=@Model.ID&maMay=@item.MaMay">delete</a>
+                   </td>
+                }
+            </table>
+        </div>
+    </div>
+</div>

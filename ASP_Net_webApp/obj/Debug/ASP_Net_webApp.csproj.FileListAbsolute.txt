@@ -70,3 +70,7 @@ D:\Hoang\WEB\WebApp\ASP_Net_webApp\ASP_Net_webApp\obj\Debug\ASP_Net_webApp.cspro
 D:\Hoang\WEB\WebApp\ASP_Net_webApp\ASP_Net_webApp\obj\Debug\ASP_Net_.76A010CA.Up2Date
 D:\Hoang\WEB\WebApp\ASP_Net_webApp\ASP_Net_webApp\obj\Debug\ASP_Net_webApp.dll
 D:\Hoang\WEB\WebApp\ASP_Net_webApp\ASP_Net_webApp\obj\Debug\ASP_Net_webApp.pdb
+D:\Hoang\WEB\WebApp\ASP_Net_webApp\ASP_Net_webApp\bin\EntityFramework.dll
+D:\Hoang\WEB\WebApp\ASP_Net_webApp\ASP_Net_webApp\bin\EntityFramework.SqlServer.dll
+D:\Hoang\WEB\WebApp\ASP_Net_webApp\ASP_Net_webApp\bin\EntityFramework.xml
+D:\Hoang\WEB\WebApp\ASP_Net_webApp\ASP_Net_webApp\bin\EntityFramework.SqlServer.xml
