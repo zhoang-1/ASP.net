@@ -4,7 +4,7 @@
     <Key>
       <PropertyRef Name="ID" />
     </Key>
-    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID" Type="int" Nullable="false" />
     <Property Name="TenBaiViet" Type="nvarchar" MaxLength="200" Nullable="false" />
     <Property Name="MoTa" Type="nvarchar" MaxLength="200" />
     <Property Name="NgayViet" Type="date" />
@@ -13,7 +13,7 @@
     <Property Name="HinhAnh" Type="nvarchar" MaxLength="500" />
     <Property Name="HienThi" Type="bit" />
     <Property Name="ThuTu" Type="int" />
-    <Property Name="idBaiViet" Type="int" />
+    <Property Name="idBaiViet" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="KhachHang">
     <Key>
@@ -29,7 +29,7 @@
     <Key>
       <PropertyRef Name="ID" />
     </Key>
-    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="TenLoai" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="LoaiKhachHang">
@@ -58,8 +58,8 @@
     <Property Name="version" Type="int" />
     <Property Name="definition" Type="varbinary(max)" />
   </EntityType>
-  <Association Name="FK_BaiViet_LoaiBaiViet">
-    <End Role="LoaiBaiViet" Type="Self.LoaiBaiViet" Multiplicity="0..1" />
+  <Association Name="FK_BaiViet_LoaiBaiViet1">
+    <End Role="LoaiBaiViet" Type="Self.LoaiBaiViet" Multiplicity="1" />
     <End Role="BaiViet" Type="Self.BaiViet" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="LoaiBaiViet">
@@ -89,7 +89,7 @@
     <EntitySet Name="LoaiKhachHang" EntityType="Self.LoaiKhachHang" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="MayTinh" EntityType="Self.MayTinh" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK_BaiViet_LoaiBaiViet" Association="Self.FK_BaiViet_LoaiBaiViet">
+    <AssociationSet Name="FK_BaiViet_LoaiBaiViet1" Association="Self.FK_BaiViet_LoaiBaiViet1">
       <End Role="LoaiBaiViet" EntitySet="LoaiBaiViet" />
       <End Role="BaiViet" EntitySet="BaiViet" />
     </AssociationSet>

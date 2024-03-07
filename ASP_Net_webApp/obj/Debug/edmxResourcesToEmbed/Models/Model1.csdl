@@ -7,7 +7,7 @@
     <EntitySet Name="LoaiKhachHangs" EntityType="BanHang_TestModel.LoaiKhachHang" />
     <EntitySet Name="MayTinhs" EntityType="BanHang_TestModel.MayTinh" />
     <EntitySet Name="sysdiagrams" EntityType="BanHang_TestModel.sysdiagram" />
-    <AssociationSet Name="FK_BaiViet_LoaiBaiViet" Association="BanHang_TestModel.FK_BaiViet_LoaiBaiViet">
+    <AssociationSet Name="FK_BaiViet_LoaiBaiViet1" Association="BanHang_TestModel.FK_BaiViet_LoaiBaiViet1">
       <End Role="LoaiBaiViet" EntitySet="LoaiBaiViets" />
       <End Role="BaiViet" EntitySet="BaiViets" />
     </AssociationSet>
@@ -20,7 +20,7 @@
     <Key>
       <PropertyRef Name="ID" />
     </Key>
-    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
     <Property Name="TenBaiViet" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
     <Property Name="MoTa" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
     <Property Name="NgayViet" Type="DateTime" Precision="0" />
@@ -29,8 +29,8 @@
     <Property Name="HinhAnh" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
     <Property Name="HienThi" Type="Boolean" />
     <Property Name="ThuTu" Type="Int32" />
-    <Property Name="idBaiViet" Type="Int32" />
-    <NavigationProperty Name="LoaiBaiViet" Relationship="BanHang_TestModel.FK_BaiViet_LoaiBaiViet" FromRole="BaiViet" ToRole="LoaiBaiViet" />
+    <Property Name="idBaiViet" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="LoaiBaiViet" Relationship="BanHang_TestModel.FK_BaiViet_LoaiBaiViet1" FromRole="BaiViet" ToRole="LoaiBaiViet" />
   </EntityType>
   <EntityType Name="KhachHang">
     <Key>
@@ -47,9 +47,9 @@
     <Key>
       <PropertyRef Name="ID" />
     </Key>
-    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="TenLoai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="BaiViets" Relationship="BanHang_TestModel.FK_BaiViet_LoaiBaiViet" FromRole="LoaiBaiViet" ToRole="BaiViet" />
+    <NavigationProperty Name="BaiViets" Relationship="BanHang_TestModel.FK_BaiViet_LoaiBaiViet1" FromRole="LoaiBaiViet" ToRole="BaiViet" />
   </EntityType>
   <EntityType Name="LoaiKhachHang">
     <Key>
@@ -78,8 +78,8 @@
     <Property Name="version" Type="Int32" />
     <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
-  <Association Name="FK_BaiViet_LoaiBaiViet">
-    <End Type="BanHang_TestModel.LoaiBaiViet" Role="LoaiBaiViet" Multiplicity="0..1" />
+  <Association Name="FK_BaiViet_LoaiBaiViet1">
+    <End Type="BanHang_TestModel.LoaiBaiViet" Role="LoaiBaiViet" Multiplicity="1" />
     <End Type="BanHang_TestModel.BaiViet" Role="BaiViet" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="LoaiBaiViet">

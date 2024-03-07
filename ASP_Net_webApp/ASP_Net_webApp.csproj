@@ -143,6 +143,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KhachHangController.cs" />
+    <Compile Include="Controllers\LoaiBaiVietController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -198,6 +199,9 @@
     <Content Include="Views\KhachHang\DanhSach.cshtml" />
     <Content Include="Views\KhachHang\ThemMoi.cshtml" />
     <Content Include="Views\KhachHang\CapNhat.cshtml" />
+    <Content Include="Views\LoaiBaiViet\DanhSach.cshtml" />
+    <Content Include="Views\LoaiBaiViet\ThemMoi.cshtml" />
+    <Content Include="Views\LoaiBaiViet\CapNhat.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

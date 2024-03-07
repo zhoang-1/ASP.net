@@ -1,0 +1,39 @@
+﻿@model IEnumerable<ASP_Net_webApp.Models.LoaiBaiViet>
+
+@{
+    ViewBag.Title = "Danh Sách Loại Bài Viết";
+    Layout = "~/Views/Shared/LayoutUser.cshtml"; 
+    ViewBag.active = 2;
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Danh Sách Loại Bài Viết</h3>
+            <p>
+                <a href="~/LoaiBaiViet/ThemMoi" style="float:right">Thêm Mới </a>
+            </p>
+            <table class="table">
+                <tr>
+                    <th>
+                        loại Bài Viết
+                    </th>
+                    <th>#</th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TenLoai)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Sửa", "CapNhat", new { id = item.ID })
+                            @Html.ActionLink("Xóa", "Xoa", new { id = item.ID })
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+ </div>

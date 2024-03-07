@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|d:\\hoang\\web\\webapp\\asp_net_webapp\\asp_net_webapp\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|solutionrelative:asp_net_webapp\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\asp_net_webapp\\controllers\\loaibaivietcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|solutionrelative:asp_net_webapp\\controllers\\loaibaivietcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\asp_net_webapp\\views\\loaibaiviet\\danhsach.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|solutionrelative:asp_net_webapp\\views\\loaibaiviet\\danhsach.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|d:\\hoang\\web\\webapp\\asp_net_webapp\\asp_net_webapp\\views\\loaibaiviet\\capnhat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|solutionrelative:asp_net_webapp\\views\\loaibaiviet\\capnhat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\asp_net_webapp\\views\\loaibaiviet\\themmoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|solutionrelative:asp_net_webapp\\views\\loaibaiviet\\themmoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +30,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ThemMoi.cshtml",
+              "DocumentMoniker": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\ASP_Net_webApp\\Views\\LoaiBaiViet\\ThemMoi.cshtml",
+              "RelativeDocumentMoniker": "ASP_Net_webApp\\Views\\LoaiBaiViet\\ThemMoi.cshtml",
+              "ToolTip": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\ASP_Net_webApp\\Views\\LoaiBaiViet\\ThemMoi.cshtml",
+              "RelativeToolTip": "ASP_Net_webApp\\Views\\LoaiBaiViet\\ThemMoi.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-07T14:46:04.897Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\ASP_Net_webApp\\Models\\Model1.edmx",
+              "RelativeDocumentMoniker": "ASP_Net_webApp\\Models\\Model1.edmx",
+              "ToolTip": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\ASP_Net_webApp\\Models\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "ASP_Net_webApp\\Models\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-03-07T15:40:49.622Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CapNhat.cshtml",
+              "DocumentMoniker": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\ASP_Net_webApp\\Views\\LoaiBaiViet\\CapNhat.cshtml",
+              "RelativeDocumentMoniker": "ASP_Net_webApp\\Views\\LoaiBaiViet\\CapNhat.cshtml",
+              "ToolTip": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\ASP_Net_webApp\\Views\\LoaiBaiViet\\CapNhat.cshtml",
+              "RelativeToolTip": "ASP_Net_webApp\\Views\\LoaiBaiViet\\CapNhat.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-07T15:01:25.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoaiBaiVietController.cs",
+              "DocumentMoniker": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\ASP_Net_webApp\\Controllers\\LoaiBaiVietController.cs",
+              "RelativeDocumentMoniker": "ASP_Net_webApp\\Controllers\\LoaiBaiVietController.cs",
+              "ToolTip": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\ASP_Net_webApp\\Controllers\\LoaiBaiVietController.cs",
+              "RelativeToolTip": "ASP_Net_webApp\\Controllers\\LoaiBaiVietController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwCUAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T14:09:58.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DanhSach.cshtml",
+              "DocumentMoniker": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\ASP_Net_webApp\\Views\\LoaiBaiViet\\DanhSach.cshtml",
+              "RelativeDocumentMoniker": "ASP_Net_webApp\\Views\\LoaiBaiViet\\DanhSach.cshtml",
+              "ToolTip": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\ASP_Net_webApp\\Views\\LoaiBaiViet\\DanhSach.cshtml",
+              "RelativeToolTip": "ASP_Net_webApp\\Views\\LoaiBaiViet\\DanhSach.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACAAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-07T14:34:38.933Z",
+              "EditorCaption": ""
             }
           ]
         }

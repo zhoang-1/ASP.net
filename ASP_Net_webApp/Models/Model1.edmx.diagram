@@ -11,7 +11,7 @@
         <EntityTypeShape EntityType="BanHang_TestModel.LoaiKhachHang" Width="1.5" PointX="0.75" PointY="1.25" />
         <EntityTypeShape EntityType="BanHang_TestModel.MayTinh" Width="1.5" PointX="5.75" PointY="0.75" />
         <EntityTypeShape EntityType="BanHang_TestModel.sysdiagram" Width="1.5" PointX="5.75" PointY="3.75" />
-        <AssociationConnector Association="BanHang_TestModel.FK_BaiViet_LoaiBaiViet" />
+        <AssociationConnector Association="BanHang_TestModel.FK_BaiViet_LoaiBaiViet1" />
         <AssociationConnector Association="BanHang_TestModel.FK_KhachHang_LoaiKhachHang" />
       </Diagram>
     </edmx:Diagrams>
