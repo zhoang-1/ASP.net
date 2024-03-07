@@ -66,6 +66,18 @@
                                         <a class="nav-link" href="~/">Home <span class="sr-only">(current)</span></a>
                                     </li>
                                 }
+                                @if (ViewBag.active == 2)
+                                {
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="~/KhachHang/DanhSach">Khách Hàng <span class="sr-only">(current)</span></a>
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li class="nav-item  ">
+                                        <a class="nav-link" href="~/KhachHang/DanhSach">Khách Hàng <span class="sr-only">(current)</span></a>
+                                    </li>
+                                }
                             </ul>
                         </div>
                     </div>

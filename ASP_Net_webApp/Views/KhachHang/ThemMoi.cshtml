@@ -1,85 +1,73 @@
 ﻿@model ASP_Net_webApp.Models.KhachHang
 
+
 @{
-    ViewBag.Title = "Thêm Mới";
+    ViewBag.Title = "Thêm Mới khách Hàng";
     Layout = "~/Views/Shared/LayoutUser.cshtml";
+    ASP_Net_webApp.Models.BanHang_TestEntities1 db = new ASP_Net_webApp.Models.BanHang_TestEntities1();
 }
-<div class="container" style="margin-top: 60px; min-height: 80vh;">
-    <div class="col-md-12">
-        <h5 class="" style=" ">
-            Thêm Mới Khách Hàng
-        </h5>
-        </hr>
-    </div>
-    <div class="col-md-12">
-        @using (Html.BeginForm())
-        {
-            @Html.AntiForgeryToken()
 
-        <div class="form-horizontal">
-            <hr />
-            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-            <div class="form-group">
-                <label class="control-label col-md-2">ID</label>
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.Id, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.Id, "", new { @class = "text-danger" })
-                </div>
-            </div>
 
-            <div class="form-group">
-                <label class="control-label col-md-2">Tên Khách Hàng</label>
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.TenkhachHang, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.TenkhachHang, "", new { @class = "text-danger" })
-                </div>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Danh Sách Khách Hàng</h3>
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
 
-            <div class="form-group">
-                <label class="control-label col-md-2">Số Điện Thoại</label>
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.SoDienThoai, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.SoDienThoai, "", new { @class = "text-danger" })
-                </div>
-            </div>
+                <div class="form-horizontal">
+                    <h4>KhachHang</h4>
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.TenKhachHang, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.TenKhachHang, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.TenKhachHang, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
 
-            <div class="form-group">
-                <label class="control-label col-md-2">Địa Chỉ Nhận Hàng</label>
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.DiaChiNhanHang, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.DiaChiNhanHang, "", new { @class = "text-danger" })
-                </div>
-            </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.SoDienThoai, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.SoDienThoai, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.SoDienThoai, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
 
-            <div class="form-group">
-                <label class="control-label col-md-2">Email</label>
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
-                </div>
-            </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DiaChi, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.DiaChi, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.DiaChi, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.idLoaiKhachHang, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                             @*cái foreach dùng để cho nhiều kiểu còn ko dùng option*@
+                            <select class="form-control" name="idLoaiKhachHang">
+                                @foreach(var loai in db.LoaiKhachHangs.ToList())
+                                    {
+                                        <option value="@loai.ID">@loai.TenPhanLoai</option>
+                                    }
+                                    @*<option value="1">VIP</option>
+                                    <option value="2">Hạng A</option>
+                                    ...*@
+                                    
+                            </select>
+                        </div>
+                    </div>
 
-            <div class="form-group">
-                <label class="control-label col-md-2">Giới Tính</label>
-                <div class="col-md-10">
-                    <select name="GioiTinh" class = "form-control">
-            <option value="Nam">Nam</option>
-            <option value="Nữ">Nữ</option>
-        </select>
-                    @*  <input type="checkbox" name="GioiTinh" value="Nam"/>*@
-                    @*<input type="radio" name="GioiTinh" value="Nam" />Nam
-                    <input type="radio" name="GioiTinh" value="Nữ" />Nữ*@
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Create" class="btn btn-default" />
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-md-offset-2 col-md-10">
-                    <button type="submit" class="btn btn-success btn-sm">Lưu</button>
-                </div>
-            </div>
+            }
         </div>
-        }
-    </div>
-</div>
-
+    </div>   
+ </div>
 

@@ -1,65 +1,71 @@
 ﻿@model IEnumerable<ASP_Net_webApp.Models.KhachHang>
 
 @{
-    ViewBag.Title = "Danh Sach Khach Hang";
+    ViewBag.Title = "DanhSach";
     Layout = "~/Views/Shared/LayoutUser.cshtml";
-    ViewBag.active = 7;
+    ViewBag.active = 2;
 }
 
-<div class="container" style="margin-top: 60px; min-height: 80vh;">
-    <div class="col-md-12">
-        <h5 class="" style=" ">
-            Danh Sach Khach Hang
-            <a href="~/KhachHang/ThemMoi" style="float:right;">Them moi</a>
-        </h5>
-       
-    </div>
-    <div class="col-md-12">
-        <table class="table">
-            <tr>
-                <th>
-                    Tên Khách Hàng
-                </th>
-                <th>
-                    Số Điện Thoại
-                </th>
-                <th>
-                    Địa Chỉ Nhận Hàng
-                </th>
-                <th>
-                    Email
-                </th>
-                <th>
-                    Giới Tính
-                </th>
-                <th>#</th>
-            </tr>
-
-            @foreach (var item in Model)
-            {
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Danh Sách Khách Hàng</h3>
+            <p>
+                <a href="~/KhachHang/ThemMoi" style="float:right">Thêm Mới </a>
+            </p>
+            <table class="table">
                 <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.TenkhachHang)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.SoDienThoai)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.DiaChiNhanHang)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Email)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.GioiTinh)
-                    </td>
-                    <td>
-                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                        @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-                    </td>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TenKhachHang)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.SoDienThoai)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DiaChi)
+                    </th>
+                    <th>Loại Khách Hàng</th>
+                    <th></th>
                 </tr>
-            }
-        </table>
-    </div>     
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TenKhachHang)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SoDienThoai)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DiaChi)
+                        </td>
+                        <td>
+                            @*Sử dụng lenh find*@
+                            @{
+                                ASP_Net_webApp.Models.BanHang_TestEntities1 db = new ASP_Net_webApp.Models.BanHang_TestEntities1();
+                                var loai = db.LoaiKhachHangs.Find(item.idLoaiKhachHang);
+                                if (loai != null)
+                                    {
+                                        <span>@loai.TenPhanLoai</span>
+                                    }
+                            }
+@*  Hoặc có thể dung cái tiếp nhưng nó có lỗi hoi nhiều *@
+                            @*@{ 
+                                if(item.idLoaiKhachHang != null)
+                                    {
+                                        <span>@item.LoaiKhachHang.TenPhanLoai</span>
+                                    }
+                            }*@
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "CapNhat", new { id = item.ID }) |
+                            @Html.ActionLink("Delete", "XoaKhachHang", new { id = item.ID })
+                        </td>
+                    </tr>
+                }
+
+            </table>
+        </div>
+    </div>
 </div>

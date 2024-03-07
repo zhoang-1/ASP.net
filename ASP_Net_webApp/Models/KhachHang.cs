@@ -18,5 +18,8 @@ namespace ASP_Net_webApp.Models
         public string TenKhachHang { get; set; }
         public string SoDienThoai { get; set; }
         public string DiaChi { get; set; }
+        public Nullable<int> idLoaiKhachHang { get; set; }
+    
+        public virtual LoaiKhachHang LoaiKhachHang { get; set; }
     }
 }
