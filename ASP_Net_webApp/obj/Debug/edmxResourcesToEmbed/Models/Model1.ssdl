@@ -4,7 +4,7 @@
     <Key>
       <PropertyRef Name="ID" />
     </Key>
-    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="TenBaiViet" Type="nvarchar" MaxLength="200" Nullable="false" />
     <Property Name="MoTa" Type="nvarchar" MaxLength="200" />
     <Property Name="NgayViet" Type="date" />
@@ -13,7 +13,7 @@
     <Property Name="HinhAnh" Type="nvarchar" MaxLength="500" />
     <Property Name="HienThi" Type="bit" />
     <Property Name="ThuTu" Type="int" />
-    <Property Name="idBaiViet" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idBaiViet" Type="int" />
   </EntityType>
   <EntityType Name="KhachHang">
     <Key>
@@ -59,7 +59,7 @@
     <Property Name="definition" Type="varbinary(max)" />
   </EntityType>
   <Association Name="FK_BaiViet_LoaiBaiViet1">
-    <End Role="LoaiBaiViet" Type="Self.LoaiBaiViet" Multiplicity="1" />
+    <End Role="LoaiBaiViet" Type="Self.LoaiBaiViet" Multiplicity="0..1" />
     <End Role="BaiViet" Type="Self.BaiViet" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="LoaiBaiViet">

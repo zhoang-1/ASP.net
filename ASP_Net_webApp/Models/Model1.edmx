@@ -9,7 +9,7 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TenBaiViet" Type="nvarchar" MaxLength="200" Nullable="false" />
           <Property Name="MoTa" Type="nvarchar" MaxLength="200" />
           <Property Name="NgayViet" Type="date" />
@@ -18,7 +18,7 @@
           <Property Name="HinhAnh" Type="nvarchar" MaxLength="500" />
           <Property Name="HienThi" Type="bit" />
           <Property Name="ThuTu" Type="int" />
-          <Property Name="idBaiViet" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idBaiViet" Type="int" />
         </EntityType>
         <EntityType Name="KhachHang">
           <Key>
@@ -64,7 +64,7 @@
           <Property Name="definition" Type="varbinary(max)" />
         </EntityType>
         <Association Name="FK_BaiViet_LoaiBaiViet1">
-          <End Role="LoaiBaiViet" Type="Self.LoaiBaiViet" Multiplicity="1" />
+          <End Role="LoaiBaiViet" Type="Self.LoaiBaiViet" Multiplicity="0..1" />
           <End Role="BaiViet" Type="Self.BaiViet" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="LoaiBaiViet">
@@ -127,7 +127,7 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="TenBaiViet" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
           <Property Name="MoTa" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
           <Property Name="NgayViet" Type="DateTime" Precision="0" />
@@ -136,7 +136,7 @@
           <Property Name="HinhAnh" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
           <Property Name="HienThi" Type="Boolean" />
           <Property Name="ThuTu" Type="Int32" />
-          <Property Name="idBaiViet" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idBaiViet" Type="Int32" />
           <NavigationProperty Name="LoaiBaiViet" Relationship="BanHang_TestModel.FK_BaiViet_LoaiBaiViet1" FromRole="BaiViet" ToRole="LoaiBaiViet" />
         </EntityType>
         <EntityType Name="KhachHang">
@@ -186,7 +186,7 @@
           <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <Association Name="FK_BaiViet_LoaiBaiViet1">
-          <End Type="BanHang_TestModel.LoaiBaiViet" Role="LoaiBaiViet" Multiplicity="1" />
+          <End Type="BanHang_TestModel.LoaiBaiViet" Role="LoaiBaiViet" Multiplicity="0..1" />
           <End Type="BanHang_TestModel.BaiViet" Role="BaiViet" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="LoaiBaiViet">

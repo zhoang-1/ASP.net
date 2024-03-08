@@ -23,7 +23,7 @@ namespace ASP_Net_webApp.Models
         public string HinhAnh { get; set; }
         public Nullable<bool> HienThi { get; set; }
         public Nullable<int> ThuTu { get; set; }
-        public int idBaiViet { get; set; }
+        public Nullable<int> idBaiViet { get; set; }
     
         public virtual LoaiBaiViet LoaiBaiViet { get; set; }
     }

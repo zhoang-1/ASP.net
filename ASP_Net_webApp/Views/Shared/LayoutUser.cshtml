@@ -31,6 +31,8 @@
 
     <link href="~/css/responsive.css" rel="stylesheet" />
 
+
+    <script src="~/Plugin/ckeditor/ckeditor.js"></script>
 </head>
 <body>
 
@@ -64,6 +66,9 @@
                                 <li class="nav-item @Html.Raw(ViewBag.active==3 ? "active": "")">
                                     <a class="nav-link" href="~/LoaiBaiViet/DanhSach">Loai Bài Viết <span class="sr-only">(current)</span></a>
                                 </li>
+                                <li class="nav-item @Html.Raw(ViewBag.active==4 ? "active": "")">
+                                    <a class="nav-link" href="~/BaiViet/DanhSach">Bài Viết <span class="sr-only">(current)</span></a>
+                                </li>
 
                             </ul>
                         </div>
@@ -92,9 +97,10 @@
 
     <script src="~/js/jquery-3.4.1.min.js"></script>
     <script src="~/js/bootstrap.js"></script>
+    @RenderSection("scripts",false)
+
 
 </body>
 
 </html>
-</body>
-</html>
+

@@ -1,0 +1,83 @@
+﻿@model IEnumerable<ASP_Net_webApp.Models.BaiViet>
+
+@{
+    ViewBag.Title = "Danh Sach Bài Viết";
+    Layout = "~/Views/Shared/LayoutUser.cshtml";
+    int stt = 0;
+}
+
+<div class="container" style="padding-top:50px">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Danh Sách Bài Viết</h3>
+            <p>
+                <a href="~/BaiViet/ThemMoi" style="float:right">Thêm Mới </a>
+            </p>
+            <table class="table table-bordered">
+                <tr>
+                    <th>STT</th>
+                    <th>
+                        Tên Bài Viết
+                    </th>
+                    <th>
+                        Mô Tả
+                    </th>
+
+                    <th>
+                        Ngày Viết
+                    </th>
+                    <th>
+                        Người Viết
+                    </th>
+
+                    <th>
+                        Hiển Thị
+                    </th>
+
+                    <th>
+                        Loại
+                    </th>
+                    <th>#</th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    stt++;
+                    <tr>
+                        <td>
+                            @stt
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TenBaiViet)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MoTa)
+                        </td>
+
+                        <td>
+                            @string.Format("{0: dd-MM-yyyy}", item.NgayViet)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NguoiViet)
+                        </td>
+
+                        <td>
+                            <input type="checkbox" @Html.Raw(item.HienThi == true ? "checked" : "") />
+                            @Html.DisplayFor(modelItem => item.HienThi)
+                        </td>
+
+                        <td>
+                            
+                            @Html.DisplayFor(modelItem => item.LoaiBaiViet.TenLoai)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Sửa", "CapNhat", new { id = item.ID }) |
+                            @Html.ActionLink("Xóa", "Xoa", new { id = item.ID })
+                        </td>
+                    </tr>
+                }
+
+            </table>
+        </div>
+    </div>
+</div>

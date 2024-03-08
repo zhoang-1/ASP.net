@@ -1,0 +1,131 @@
+﻿@model ASP_Net_webApp.Models.BaiViet
+
+@{
+    ViewBag.Title = "ThemMoi";
+    Layout = "~/Views/Shared/LayoutUser.cshtml";
+}
+
+<div class="container" style="padding-top:50px">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Danh Sách Bài Viết</h3>
+            <p>
+                <a href="~/BaiViet/DanhSach" style="float:right">Quay Lai</a>
+            </p>
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2">Loại Bài Viết</label>
+                        <div class="col-md-10">
+                            <select name="idBaiViet" class="form-control">
+                                @foreach (var item in new ASP_Net_webApp.Models.BanHang_TestEntities1().LoaiBaiViets.ToList())
+                                {
+                                    <option value="@item.ID">@item.TenLoai</option>
+
+                                }
+                            </select>
+
+                            @Html.ValidationMessageFor(model => model.idBaiViet, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2">Tên Bài Viết</label>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.TenBaiViet, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.TenBaiViet, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2">Mô Tả</label>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.MoTa, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.MoTa, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2">Ngày Viết</label>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.NgayViet, new { htmlAttributes = new { @class = "form-control", type = "date" } })
+                            @Html.ValidationMessageFor(model => model.NgayViet, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2">Người Viết</label>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.NguoiViet, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.NguoiViet, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2">Hình Ảnh</label>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.HinhAnh, new { htmlAttributes = new { @class = "form-control", type = "file" } })
+                            @Html.ValidationMessageFor(model => model.HinhAnh, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2">Hiển Thị</label>
+                        <div class="col-md-10">
+                            <div class="checkbox">
+                                <input type="checkbox" value="true" name="HienThi" @Html.Raw(Model.HienThi == true ? "checked" : "") />
+                                @Html.ValidationMessageFor(model => model.HienThi, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2">Thứ Tự</label>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.ThuTu, new { htmlAttributes = new { @class = "form-control", type = "number" } })
+                            @Html.ValidationMessageFor(model => model.ThuTu, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2">Nội Dung</label>
+                        <div class="col-md-10">
+                            @*@Html.TextAreaFor(model => model.NoiDung, new { @id = "inpNoiDung", @class = "form-control" , @rows = "10"})*@
+                            @*@Html.TextAreaFor(model => model.NoiDung, new { htmlAttributes = new { @class = "form-control" } })*@
+                            @*<textarea  id="inputNoiDung"></textarea>*@
+                            <textarea class="form-control" name="NoiDung" id="inpNoiDung">@Model.NoiDung</textarea>
+                            @Html.ValidationMessageFor(model => model.NoiDung, "", new { @class = "text-danger" })
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Create" class="btn btn-default" />
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
+
+@section scripts{
+
+    <script>
+        CKEDITOR.replace("inpNoiDung")
+    </script>
+
+}
+
+
+
+
