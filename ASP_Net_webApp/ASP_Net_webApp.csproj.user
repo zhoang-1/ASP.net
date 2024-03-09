@@ -22,6 +22,9 @@
     <WebStackScaffolding_ViewDialogWidth>600</WebStackScaffolding_ViewDialogWidth>
     <ProjectView>ProjectFiles</ProjectView>
     <WebStackScaffolding_DbContextTypeFullName>ASP_Net_webApp.Models.BanHang_TestEntities1</WebStackScaffolding_DbContextTypeFullName>
+    <_SelectedScaffolderID>MvcAreaScaffolder</_SelectedScaffolderID>
+    <_SelectedScaffolderCategoryPath>root/Common/MVC/Area</_SelectedScaffolderCategoryPath>
+    <WebStackScaffolding_AreaDialogWidth>600</WebStackScaffolding_AreaDialogWidth>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>

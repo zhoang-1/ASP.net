@@ -12,6 +12,8 @@ namespace ASP_Net_webApp.Models
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class BanHang_TestEntities1 : DbContext
     {
@@ -31,5 +33,18 @@ namespace ASP_Net_webApp.Models
         public virtual DbSet<LoaiKhachHang> LoaiKhachHangs { get; set; }
         public virtual DbSet<MayTinh> MayTinhs { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
+    
+        public virtual ObjectResult<spDanhSachKhachHang_Result> spDanhSachKhachHang(string fitter, Nullable<int> idLoaKh)
+        {
+            var fitterParameter = fitter != null ?
+                new ObjectParameter("fitter", fitter) :
+                new ObjectParameter("fitter", typeof(string));
+    
+            var idLoaKhParameter = idLoaKh.HasValue ?
+                new ObjectParameter("idLoaKh", idLoaKh) :
+                new ObjectParameter("idLoaKh", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spDanhSachKhachHang_Result>("spDanhSachKhachHang", fitterParameter, idLoaKhParameter);
+        }
     }
 }

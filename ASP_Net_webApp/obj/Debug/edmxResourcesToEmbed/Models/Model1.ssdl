@@ -82,6 +82,10 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Function Name="spDanhSachKhachHang" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fitter" Type="nvarchar" Mode="In" />
+    <Parameter Name="idLoaKh" Type="int" Mode="In" />
+  </Function>
   <EntityContainer Name="BanHang_TestModelStoreContainer">
     <EntitySet Name="BaiViet" EntityType="Self.BaiViet" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="KhachHang" EntityType="Self.KhachHang" Schema="dbo" store:Type="Tables" />

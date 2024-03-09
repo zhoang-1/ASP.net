@@ -1,9 +1,11 @@
-﻿@model IEnumerable<ASP_Net_webApp.Models.KhachHang>
-
+﻿@model IEnumerable<ASP_Net_webApp.Models.spDanhSachKhachHang_Result>
+@using ASP_Net_webApp.Models;
 @{
     ViewBag.Title = "DanhSach";
     Layout = "~/Views/Shared/LayoutUser.cshtml";
     ViewBag.active = 2;
+    BanHang_TestEntities1 db = new BanHang_TestEntities1();
+    List<LoaiKhachHang> listLoaiKH = db.LoaiKhachHangs.ToList();
 }
 
 <div class="container">
@@ -13,6 +15,25 @@
             <p>
                 <a href="~/KhachHang/ThemMoi" style="float:right">Thêm Mới </a>
             </p>
+            <div class="col-xs-12">
+                <form method="get">
+                    <div class="col-xs-2">
+                        <input type="text" name="fitter" value="@ViewBag.fitter" class="form-control" placeholder="Nhâp Tên Hoặc số Điện thoại"/>
+                    </div>
+                    <div class="col-xs-2">
+                        <select name="idLoaKh"  class="form-control">
+                            <option value="">Tất cả</option>
+                            @foreach (var loai in listLoaiKH)
+                                {
+                                    <option value="@loai.ID" @Html.Raw(loai.ID == ViewBag.idLoaKh ? "selected" : "" )>@loai.TenPhanLoai</option>
+                                }
+                        </select>  
+                    </div>
+                    <div class="col-xs-2">
+                        <button type="submit"class="btn btn-success">Tìm</button>
+                    </div>
+                </form>
+            </div>
             <table class="table">
                 <tr>
                     <th>
@@ -41,22 +62,7 @@
                             @Html.DisplayFor(modelItem => item.DiaChi)
                         </td>
                         <td>
-                            @*Sử dụng lenh find*@
-                            @{
-                                ASP_Net_webApp.Models.BanHang_TestEntities1 db = new ASP_Net_webApp.Models.BanHang_TestEntities1();
-                                var loai = db.LoaiKhachHangs.Find(item.idLoaiKhachHang);
-                                if (loai != null)
-                                    {
-                                        <span>@loai.TenPhanLoai</span>
-                                    }
-                            }
-@*  Hoặc có thể dung cái tiếp nhưng nó có lỗi hoi nhiều *@
-                            @*@{ 
-                                if(item.idLoaiKhachHang != null)
-                                    {
-                                        <span>@item.LoaiKhachHang.TenPhanLoai</span>
-                                    }
-                            }*@
+                            @item.PhanLoai    
                         </td>
                         <td>
                             @Html.ActionLink("Edit", "CapNhat", new { id = item.ID }) |

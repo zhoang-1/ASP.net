@@ -65,5 +65,16 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="spDanhSachKhachHang" FunctionName="BanHang_TestModel.Store.spDanhSachKhachHang">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BanHang_TestModel.spDanhSachKhachHang_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TenKhachHang" ColumnName="TenKhachHang" />
+          <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="PhanLoai" ColumnName="PhanLoai" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>
