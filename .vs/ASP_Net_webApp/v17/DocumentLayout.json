@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|d:\\hoang\\web\\webapp\\asp_net_webapp\\asp_net_webapp\\controllers\\baivietcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|solutionrelative:asp_net_webapp\\controllers\\baivietcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|d:\\hoang\\web\\webapp\\asp_net_webapp\\asp_net_webapp\\views\\baiviet\\themmoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|solutionrelative:asp_net_webapp\\views\\baiviet\\themmoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|d:\\hoang\\web\\webapp\\asp_net_webapp\\asp_net_webapp\\views\\baiviet\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|solutionrelative:asp_net_webapp\\views\\baiviet\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|d:\\hoang\\web\\webapp\\asp_net_webapp\\asp_net_webapp\\views\\shared\\layoutuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|solutionrelative:asp_net_webapp\\views\\shared\\layoutuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\asp_net_webapp\\views\\baiviet\\themmoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|solutionrelative:asp_net_webapp\\views\\baiviet\\themmoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\asp_net_webapp\\views\\baiviet\\danhsach.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|solutionrelative:asp_net_webapp\\views\\baiviet\\danhsach.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\asp_net_webapp\\controllers\\baivietcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|solutionrelative:asp_net_webapp\\controllers\\baivietcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|d:\\hoang\\web\\webapp\\asp_net_webapp\\asp_net_webapp\\plugin\\ckfinder\\core\\connector\\aspx\\connector.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{E41B6E8A-5A41-4445-BC8F-47E3C7AEA518}|ASP_Net_webApp\\ASP_Net_webApp.csproj|solutionrelative:asp_net_webapp\\plugin\\ckfinder\\core\\connector\\aspx\\connector.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,20 +30,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "BaiVietController.cs",
               "DocumentMoniker": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\ASP_Net_webApp\\Controllers\\BaiVietController.cs",
               "RelativeDocumentMoniker": "ASP_Net_webApp\\Controllers\\BaiVietController.cs",
               "ToolTip": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\ASP_Net_webApp\\Controllers\\BaiVietController.cs",
               "RelativeToolTip": "ASP_Net_webApp\\Controllers\\BaiVietController.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAgwCgAAAAMAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAswDMAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T07:49:28.127Z",
-              "IsPinned": true
+              "WhenOpened": "2024-03-09T09:07:53.466Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -49,23 +54,39 @@
               "RelativeDocumentMoniker": "ASP_Net_webApp\\Views\\BaiViet\\ThemMoi.cshtml",
               "ToolTip": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\ASP_Net_webApp\\Views\\BaiViet\\ThemMoi.cshtml",
               "RelativeToolTip": "ASP_Net_webApp\\Views\\BaiViet\\ThemMoi.cshtml",
-              "ViewState": "AQIAAGIAAAAAAAAAAAAiwGYAAABoAAAA",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAAAHsAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-08T08:18:26.136Z",
-              "IsPinned": true
+              "WhenOpened": "2024-03-09T09:10:50.276Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DanhSach.cshtml",
-              "DocumentMoniker": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\ASP_Net_webApp\\Views\\BaiViet\\DanhSach.cshtml",
-              "RelativeDocumentMoniker": "ASP_Net_webApp\\Views\\BaiViet\\DanhSach.cshtml",
-              "ToolTip": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\ASP_Net_webApp\\Views\\BaiViet\\DanhSach.cshtml",
-              "RelativeToolTip": "ASP_Net_webApp\\Views\\BaiViet\\DanhSach.cshtml",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAIwEYAAABTAAAA",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\ASP_Net_webApp\\Views\\BaiViet\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ASP_Net_webApp\\Views\\BaiViet\\Edit.cshtml",
+              "ToolTip": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\ASP_Net_webApp\\Views\\BaiViet\\Edit.cshtml",
+              "RelativeToolTip": "ASP_Net_webApp\\Views\\BaiViet\\Edit.cshtml",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAAHYAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-08T08:04:15.401Z",
-              "IsPinned": true
+              "WhenOpened": "2024-03-09T09:10:47.7Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LayoutUser.cshtml",
+              "DocumentMoniker": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\ASP_Net_webApp\\Views\\Shared\\LayoutUser.cshtml",
+              "RelativeDocumentMoniker": "ASP_Net_webApp\\Views\\Shared\\LayoutUser.cshtml",
+              "ToolTip": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\ASP_Net_webApp\\Views\\Shared\\LayoutUser.cshtml",
+              "RelativeToolTip": "ASP_Net_webApp\\Views\\Shared\\LayoutUser.cshtml",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAgwGcAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-09T09:08:03.434Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -73,15 +94,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LayoutUser.cshtml",
-              "DocumentMoniker": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\ASP_Net_webApp\\Views\\Shared\\LayoutUser.cshtml",
-              "RelativeDocumentMoniker": "ASP_Net_webApp\\Views\\Shared\\LayoutUser.cshtml",
-              "ToolTip": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\ASP_Net_webApp\\Views\\Shared\\LayoutUser.cshtml",
-              "RelativeToolTip": "ASP_Net_webApp\\Views\\Shared\\LayoutUser.cshtml",
-              "ViewState": "AQIAABEAAAAAAAAAAAAcwCQAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-08T10:01:43.164Z",
+              "DocumentIndex": 4,
+              "Title": "connector.aspx",
+              "DocumentMoniker": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\ASP_Net_webApp\\plugin\\ckfinder\\core\\connector\\aspx\\connector.aspx",
+              "RelativeDocumentMoniker": "ASP_Net_webApp\\plugin\\ckfinder\\core\\connector\\aspx\\connector.aspx",
+              "ToolTip": "D:\\Hoang\\WEB\\WebApp\\ASP_Net_webApp\\ASP_Net_webApp\\plugin\\ckfinder\\core\\connector\\aspx\\connector.aspx",
+              "RelativeToolTip": "ASP_Net_webApp\\plugin\\ckfinder\\core\\connector\\aspx\\connector.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-09T11:20:49.834Z",
               "EditorCaption": ""
             }
           ]

@@ -74,3 +74,5 @@ D:\Hoang\WEB\WebApp\ASP_Net_webApp\ASP_Net_webApp\bin\EntityFramework.dll
 D:\Hoang\WEB\WebApp\ASP_Net_webApp\ASP_Net_webApp\bin\EntityFramework.SqlServer.dll
 D:\Hoang\WEB\WebApp\ASP_Net_webApp\ASP_Net_webApp\bin\EntityFramework.xml
 D:\Hoang\WEB\WebApp\ASP_Net_webApp\ASP_Net_webApp\bin\EntityFramework.SqlServer.xml
+D:\Hoang\WEB\WebApp\ASP_Net_webApp\ASP_Net_webApp\bin\CKFinder.dll
+D:\Hoang\WEB\WebApp\ASP_Net_webApp\ASP_Net_webApp\bin\CKFinder.pdb
